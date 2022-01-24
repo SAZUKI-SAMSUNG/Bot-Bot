@@ -115,6 +115,5 @@ Contact Me On [Telegram](https://t.me/Pro_editor_tg)
 ## License
 Code released under [The GNU General Public License](LICENSE).
 ## credit 😍
-<p>
-##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Credit+To+BHARATH!;)
+##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Credit-To-BHARATH!;)
 </p>
