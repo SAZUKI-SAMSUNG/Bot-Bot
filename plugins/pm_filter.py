@@ -128,12 +128,12 @@ async def next_page(bot, query):
             [InlineKeyboardButton("« BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📃 Pages {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton("NEXT »", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append([InlineKeyboardButton(f"🌹 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton("NEXT »", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("« BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
+                InlineKeyboardButton(f"🌹 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
                 InlineKeyboardButton("NEXT »", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -441,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url='http://t.me/dqautofl_bot?startgroup=true')
             ],[
             InlineKeyboardButton('sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/EDIT_REPO')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/DEVKILLEROp')
             ],[
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -455,25 +455,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('😎 𝐚𝐝𝐦𝐢𝐧 😎', callback_data='admin'),
-            InlineKeyboardButton('🗳️ 𝐜𝐨𝐧𝐧𝐞𝐜𝐭 🗳️', callback_data='coct'),
-            InlineKeyboardButton('👻 𝐟𝐢𝐥𝐭𝐞𝐫𝐬 👻', callback_data='auto_manual')
+            InlineKeyboardButton('😎 𝐀𝐃𝐌𝐈𝐍 😎', callback_data='admin'),
+            InlineKeyboardButton('🗳️ 𝐂𝐎𝐍𝐍𝐄𝐂𝐓 🗳️', callback_data='coct'),
+            InlineKeyboardButton('👻 𝐅𝐈𝐋𝐓𝐄𝐑𝐒 👻', callback_data='auto_manual')
             ],[
-            InlineKeyboardButton('📖 𝐠𝐭𝐫𝐚𝐧𝐬 📖', callback_data='gtrans'),
-            InlineKeyboardButton('📄 𝐢𝐧𝐟𝐨 📄', callback_data='info'),
-            InlineKeyboardButton('💻 𝐩𝐚𝐬𝐭𝐞 💻', callback_data='paste')
+            InlineKeyboardButton('📖 𝐆𝐓𝐑𝐀𝐍𝐒 📖', callback_data='gtrans'),
+            InlineKeyboardButton('📄 𝐈𝐍𝐅𝐎 📄', callback_data='info'),
+            InlineKeyboardButton('💻 𝐏𝐀𝐒𝐓𝐄 💻', callback_data='paste')
             ],[
-            InlineKeyboardButton('👺 𝐩𝐮𝐫𝐠𝐞 👺', callback_data='purge'),
-            InlineKeyboardButton('🔇 𝐫𝐞𝐬𝐭𝐫𝐢𝐜𝐭 🔇', callback_data='restric'),
-            InlineKeyboardButton('🔍 𝐬𝐞𝐚𝐫𝐜𝐡 🔎', callback_data='search')
+            InlineKeyboardButton('👺 𝐏𝐔𝐑𝐆𝐄 👺', callback_data='purge'),
+            InlineKeyboardButton('🔇 𝐑𝐄𝐒𝐓𝐑𝐈𝐂 🔇', callback_data='restric'),
+            InlineKeyboardButton('🔍 𝐒𝐄𝐀𝐑𝐂𝐇 🔎', callback_data='search')
             ],[
-            InlineKeyboardButton('💫 𝐭𝐠𝐫𝐚𝐩𝐡 💫', callback_data='tgraph'),
-            InlineKeyboardButton('🧟‍♂️ 𝐳𝐨𝐦𝐛𝐢𝐞𝐬 🧟‍♂️', callback_data='zombies'),
-            InlineKeyboardButton('🤡 𝐟𝐮𝐧 🤡', callback_data='fun')
+            InlineKeyboardButton('💫 𝐓𝐆𝐑𝐀𝐏𝐇 💫', callback_data='tgraph'),
+            InlineKeyboardButton('🧟‍♂️ 𝐙𝐎𝐌𝐁𝐈𝐄𝐀 🧟‍♂️', callback_data='zombies'),
+            InlineKeyboardButton('🤡 𝐅𝐔𝐍 🤡', callback_data='fun')
             ],[
-            InlineKeyboardButton('🎶 𝐬𝐨𝐧𝐠 🎶', callback_data='song'),
-            InlineKeyboardButton('🖨️ 𝐣𝐬𝐨𝐧 🖨️', callback_data='json'),
-            InlineKeyboardButton('📎 𝐩𝐢𝐧 📎', callback_data='pin')
+            InlineKeyboardButton('🎶 𝐒𝐎𝐍𝐆 🎶', callback_data='song'),
+            InlineKeyboardButton('🖨️ 𝐉𝐀𝐎𝐍 🖨️', callback_data='json'),
+            InlineKeyboardButton('📎 𝐏𝐈𝐌 📎', callback_data='pin')
             ],[
             InlineKeyboardButton('« Back', callback_data='start')
         ]]
@@ -771,11 +771,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT »",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🌹 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT »",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1 🗓",callback_data="pages")]
+            [InlineKeyboardButton(text="🌹 1/1 🌹",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
@@ -811,7 +811,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n\n<b>👥 Requested by: {message.from_user.mention}</b>\n<b>© Powered by: <a href='https://t.me/+y53tWFUw6Q43NzE9'>{message.chat.title}</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 5 minutes to avoid copyright issues.</s>"
+        cap = f"<b>🔰 Title:</b> {search}\n\n<b>👨 Requested by: {message.from_user.mention}</b>\n<b>© Powered by: <a href='https://t.me/cine_makotta'>{message.chat.title}</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 5 minutes to avoid copyright issues.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
